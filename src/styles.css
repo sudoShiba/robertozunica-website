@@ -1,0 +1,157 @@
+/* © coded by Shiba https://shiba.house/
+Like the code? Star it on github!
+    
+                                                                  ████████                        
+                                                                  ▒▒██████                        
+          ▒▒▓▓████                                              ████▒▒▒▒██░░                      
+          ████████  ░░                                      ░░▒▒██▓▓▒▒▒▒▒▒▓▓██▒▒                  
+          ████▒▒▒▒████                                      ██████▒▒▒▒▒▒▒▒▒▒████                  
+          ▓▓██▓▓▒▒▓▓▓▓████                              ░░▒▒████▓▓▒▒▒▒░░▒▒▒▒████                  
+      ▒▒██▓▓▒▒▒▒▒▒▒▒▒▒████▒▒▒▒                          ░░████▒▒▒▒▒▒▒▒  ▒▒▒▒████                  
+      ░░████▒▒▒▒  ▒▒▒▒▒▒▒▒████        ░░░░▒▒████▓▓▓▓██████▒▒▒▒▒▒▒▒░░    ░░▒▒▓▓██▓▓                
+      ░░████▒▒▒▒  ░░▒▒▒▒▒▒▒▒▒▒██████████████████████████▓▓████▓▓▒▒░░      ▒▒▒▒████                
+      ░░████▒▒▒▒      ░░▒▒▒▒▓▓██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒▒  ░░░░▒▒▒▒████                
+        ████▒▒▒▒        ▒▒▓▓████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░        ░░▒▒████░░              
+        ████▒▒▒▒          ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    ▒▒▓▓████              
+        ████▒▒▒▒    ░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████              
+        ████▒▒▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒            ▒▒▒▒▒▒▒▒▒▒▒▒▒▒████░░            
+        ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒              ▒▒▒▒▒▒▒▒▒▒▒▒  ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██▒▒░░          
+        ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒░░  ▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓        
+        ▓▓██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████    
+        ▒▒██▓▓▒▒▒▒▒▒▒▒▒▒▒▒████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████▒▒  
+    ▒▒▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████▓▓▓▓▓▓▒▒▒▒        ▒▒▒▒▒▒▓▓██████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▓▓████  
+    ▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████▒▒▒▒        ░░░░░░          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  ░░▒▒▓▓████  
+  ▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒▒▒▒░░                            ░░    ░░        ░░  ░░  ▒▒▒▒████▒▒
+  ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░                ░░░░▒▒██    ░░                  ░░  ░░░░▒▒▒▒████▓▓
+  ████▒▒▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░            ▒▒██████████▒▒        ████                  ░░▒▒▓▓████
+  ████▒▒▒▒    ░░                              ▓▓▒▒████░░          ████          ░░░░░░▒▒▒▒████    
+  ████▒▒▒▒                      ████░░            ████  ░░██▓▓██▓▓▓▓          ░░  ░░  ▒▒▒▒████▒▒░░
+  ████▒▒▒▒                      ████▓▓▒▒▒▒▒▒▓▓▓▓████████████████████          ░░      ▒▒▒▒▓▓████  
+  ████▒▒▒▒░░                        ░░████████████████▓▓▓▓▒▒                    ░░░░░░▒▒████▒▒░░  
+  ████▓▓▓▓▒▒▒▒░░                    ░░██▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒                ░░  ▒▒▒▒▒▒▒▒████▓▓    
+      ████▓▓▒▒░░                                ▒▒▒▒▒▒▒▒▒▒▒▒            ░░  ░░  ▒▒▒▒▓▓▓▓▓▓▒▒░░    
+      ▓▓██▓▓▒▒░░                                ▒▒▒▒▒▒▒▒▒▒▒▒░░  ░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓████        
+      ▒▒████░░░░      ░░                        ▒▒▒▒▒▒▒▒▒▒▒▒    ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓████        
+      ▓▓████▒▒▓▓░░░░▒▒▒▒░░                      ▒▒░░░░          ░░▒▒▒▒▒▒▒▒▒▒▓▓████████            
+          ░░████▒▒▒▒▒▒▒▒░░        ░░░░▒▒▒▒▒▒░░              ░░░░░░▒▒▒▒████████████████░░          
+          ░░████▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████▓▓░░          
+                ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓██▒▒░░                      
+                ██▓▓████████████████████▒▒▒▒▒▒▒▒▒▒▓▓▓▓██████████████████                          
+                    ██████████████████░░████████████████████████████▒▒░░                          
+                                        ████████████▒▒░░                                          
+
+*/
+/* ---- declarations ---- */
+/* declaring font */
+@font-face {
+    font-family: "raleway";
+    src: url("raleway.ttf");
+}
+
+@keyframes animateColor {
+    from {
+        color: var(color);
+    }
+    to {
+        color: var(--colorEnd);
+    }
+}
+
+@keyframes headerButtonBorder {
+    to {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+    }
+}
+
+/* ---- classes ---- */
+.redHover:hover {
+    --colorEnd: var(--alt-color);
+    animation-name: animateColor;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; /* makes animation stay on endstate */
+}
+
+/* ---- global selectors ---- */
+html, body, :root {
+    /* global variables */
+    --accent-color: #04c2c9;
+    --alt-color: maroon;
+    --pebble: #333333;
+    --text-color: #E1D9D1;
+    --alt-text-color: #222;
+
+    font-family: "raleway", "calibri", "arial"; /* setting font */
+
+    margin: 0;
+    background: var(--pebble);
+}
+
+
+/* a tag */
+a {
+    color: dimgray;
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--alt-color);
+    text-decoration: underline;
+}
+
+a:visited { color: dimgray; }
+
+/* button */
+button:hover { cursor: pointer; }
+
+/* ---- navigation ---- */
+/* lists */
+nav ul {
+    display: flex;
+    padding: 0;
+
+    flex-wrap: wrap;
+    justify-content: center; /* center the items */
+}
+
+nav li {
+    display: block;
+
+    list-style-type: none; /* removing markers */
+    padding: 10pt;
+}
+
+/* ---- header ---- */
+header {
+    display: flex;
+
+    justify-content: center; /* center items */
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header h1 { font-size: 500%; }
+
+header h1, header button {
+    text-align: center;
+    font-weight: lighter;
+
+    color: var(--text-color);
+}
+
+header button {
+    align-self: center;
+
+    background: none;
+    border: thin;
+    border-style: solid;
+    border-color: var(--text-color);
+}
+
+header button:hover {
+    --colorEnd: var(--alt-text-color);
+    border-color: var(--text-color);
+
+    animation: animateColor 0.5s, headerButtonBorder 0.5s;
+    animation-fill-mode: forwards; /* makes animation stay on endstate */
+}
