@@ -44,7 +44,7 @@ Like the code? Star it on github!
 /* ---- declarations ---- */
 /* declaring font */
 @font-face {
-    font-family: "raleway";
+    font-family: "raleway-backup";
     src: url("raleway.ttf");
 }
 
@@ -76,7 +76,7 @@ Like the code? Star it on github!
     --text-color: #E1D9D1;
     --alt-text-color: #222;
 
-    font-family: "raleway", "Raleway", "calibri", "arial"; /* setting font (second raleway is imported from google*/
+    font-family: "Raleway", "raleway-backup","calibri", "arial"; /* setting font*/
     scroll-behavior: smooth;
 
     color: var(--text-color);
