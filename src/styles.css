@@ -45,8 +45,10 @@ Like the code? Star it on github!
 /* declaring font */
 @font-face {
     font-family: "raleway";
-    src: url("raleway.ttf"), url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+    src: url("raleway.ttf");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 @keyframes animateColor {
     from {
@@ -74,7 +76,7 @@ Like the code? Star it on github!
     --text-color: #E1D9D1;
     --alt-text-color: #222;
 
-    font-family: "raleway", "calibri", "arial"; /* setting font */
+    font-family: "raleway", "Raleway", "calibri", "arial"; /* setting font (second raleway is imported from google*/
     scroll-behavior: smooth;
 
     color: var(--text-color);
