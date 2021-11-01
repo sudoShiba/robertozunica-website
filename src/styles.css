@@ -53,7 +53,7 @@ Like the code? Star it on github!
         color: var(color);
     }
     to {
-        color: var(--colorEnd);
+        color: var(--color-end);
     }
 }
 
@@ -64,30 +64,35 @@ Like the code? Star it on github!
     }
 }
 
+/* ---- global ---- */
+:root, html, body {
+    /* global variables */
+    --accent-color: #04c2c9;
+    --alt-color: maroon;
+    --background-color: #333333; /* pebble */
+    --alt-background-color: #dee4e7;
+    --text-color: #E1D9D1;
+    --alt-text-color: #222;
+
+    font-family: "raleway", "calibri", "arial"; /* setting font */
+    scroll-behavior: smooth;
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+    margin: 0;
+    background: var(--background-color);
+}
+
 /* ---- classes ---- */
 .redHover:hover {
-    --colorEnd: var(--alt-color);
+    --color-end: var(--alt-color);
     animation-name: animateColor;
     animation-duration: 0.5s;
     animation-fill-mode: forwards; /* makes animation stay on endstate */
 }
 
 /* ---- global selectors ---- */
-html, body, :root {
-    /* global variables */
-    --accent-color: #04c2c9;
-    --alt-color: maroon;
-    --pebble: #333333;
-    --text-color: #E1D9D1;
-    --alt-text-color: #222;
-
-    font-family: "raleway", "calibri", "arial"; /* setting font */
-
-    margin: 0;
-    background: var(--pebble);
-}
-
-
 /* a tag */
 a {
     color: dimgray;
@@ -109,14 +114,14 @@ button:hover { cursor: pointer; }
 nav ul {
     display: flex;
     padding: 0;
-
+    
     flex-wrap: wrap;
     justify-content: center; /* center the items */
 }
 
 nav li {
     display: block;
-
+    
     list-style-type: none; /* removing markers */
     padding: 10pt;
 }
@@ -124,7 +129,7 @@ nav li {
 /* ---- header ---- */
 header {
     display: flex;
-
+    
     justify-content: center; /* center items */
     flex-direction: column;
     flex-wrap: wrap;
@@ -135,13 +140,13 @@ header h1 { font-size: 500%; }
 header h1, header button {
     text-align: center;
     font-weight: lighter;
-
+    
     color: var(--text-color);
 }
 
 header button {
     align-self: center;
-
+    
     background: none;
     border: thin;
     border-style: solid;
@@ -149,9 +154,29 @@ header button {
 }
 
 header button:hover {
-    --colorEnd: var(--alt-text-color);
+    --color-end: var(--alt-text-color);
     border-color: var(--text-color);
-
+    
     animation: animateColor 0.5s, headerButtonBorder 0.5s;
     animation-fill-mode: forwards; /* makes animation stay on endstate */
+}
+
+/* ---- media queries ---- */
+/* light mode */
+@media (prefers-color-scheme: light) {
+    /* global variables */
+    html, body, :root {
+        color: var(--alt-text-color);
+        background-color: var(--alt-background-color);
+        border-color: var(--alt-text-color);
+        --color-end: var(--text-color);
+    }
+
+    header h1, header button {
+        color: var(--alt-text-color);
+        border-color: var(--alt-text-color);
+    }
+
+    header button:hover { --color-end: var(--text-color); }
+
 }
