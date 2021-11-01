@@ -45,7 +45,7 @@ Like the code? Star it on github!
 /* declaring font */
 @font-face {
     font-family: "raleway";
-    src: url("raleway.ttf");
+    src: url("raleway.ttf"), url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 }
 
 @keyframes animateColor {
