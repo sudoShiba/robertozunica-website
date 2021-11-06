@@ -50,22 +50,6 @@ Like the code? Star it on github!
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-@keyframes animateColor {
-    from {
-        color: var(color);
-    }
-    to {
-        color: var(--color-end);
-    }
-}
-
-@keyframes headerButtonBorder {
-    to {
-        border-color: var(--accent-color);
-        background-color: var(--accent-color);
-    }
-}
-
 /* ---- global ---- */
 :root, html, body {
     /* global variables */
@@ -83,16 +67,22 @@ Like the code? Star it on github!
     background-color: var(--background-color);
 
     margin: 0;
-    background: var(--background-color);
 }
 
 /* ---- classes ---- */
-.redHover:hover {
-    --color-end: var(--alt-color);
-    animation-name: animateColor;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards; /* makes animation stay on endstate */
+.text-color-hover { transition: 0.5s; }
+.text-color-hover:hover { color: var(--text-color); }
+
+.arrow {
+    font-weight: bolder;
+
+    display: inline-block;
+    padding: 5pt;
+
+    transition: 0.5s ease;
 }
+
+.arrow:hover { transform: rotate(90deg); }
 
 /* ---- global selectors ---- */
 /* a tag */
@@ -126,6 +116,7 @@ nav li {
     
     list-style-type: none; /* removing markers */
     padding: 10pt;
+    margin: 10pt;
 }
 
 /* ---- header ---- */
@@ -148,19 +139,23 @@ header h1, header button {
 
 header button {
     align-self: center;
-    
+
+    padding: 5pt;
+    margin: 5pt;
+
     background: none;
     border: thin;
     border-style: solid;
     border-color: var(--text-color);
+
+    transition: 0.5s;
 }
 
 header button:hover {
-    --color-end: var(--alt-text-color);
-    border-color: var(--text-color);
-    
-    animation: animateColor 0.5s, headerButtonBorder 0.5s;
-    animation-fill-mode: forwards; /* makes animation stay on endstate */
+    color: var(--alt-text-color);
+
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 /* ---- media queries ---- */
@@ -171,7 +166,6 @@ header button:hover {
         color: var(--alt-text-color);
         background-color: var(--alt-background-color);
         border-color: var(--alt-text-color);
-        --color-end: var(--text-color);
     }
 
     header h1, header button {
@@ -179,6 +173,6 @@ header button:hover {
         border-color: var(--alt-text-color);
     }
 
-    header button:hover { --color-end: var(--text-color); }
+    .text-color-hover:hover { color: var(--alt-color); }
 
 }
