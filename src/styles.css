@@ -101,7 +101,12 @@ button:hover { cursor: pointer; }
 
 /* code */
 code {
-    
+    background-color: beige;
+
+    margin: 10pt;
+    padding: 5pt;
+
+    border-radius: 3pt;
 }
 
 /* ---- navigation ---- */

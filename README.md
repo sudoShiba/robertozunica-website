@@ -1,0 +1,2 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/shibaismyname/robertozunica-website/badge)](https://www.codefactor.io/repository/github/shibaismyname/robertozunica-website)
+[![wakatime](https://wakatime.com/badge/user/0e68c2ac-c286-4030-b7f6-9b1d851938b5/project/aa606ff3-afde-4123-aef7-c4006e554f8e.svg)](https://wakatime.com/badge/user/0e68c2ac-c286-4030-b7f6-9b1d851938b5/project/aa606ff3-afde-4123-aef7-c4006e554f8e)
