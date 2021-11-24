@@ -82,8 +82,6 @@ Like the code? Star it on github!
     transition: 0.5s ease;
 }
 
-.arrow:hover { transform: rotate(90deg); }
-
 /* ---- global selectors ---- */
 /* a tag */
 a {
@@ -100,6 +98,11 @@ a:visited { color: dimgray; }
 
 /* button */
 button:hover { cursor: pointer; }
+
+/* code */
+code {
+    
+}
 
 /* ---- navigation ---- */
 /* lists */
@@ -157,6 +160,8 @@ header button:hover {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
 }
+
+header button:hover > .arrow { transform: rotate(90deg); }
 
 /* ---- media queries ---- */
 /* light mode */
